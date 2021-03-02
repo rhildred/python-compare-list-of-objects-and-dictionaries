@@ -1,14 +1,14 @@
 ||||
 |---|---|---|
-||CP104 Practice Final||
+||MB215 Practice Midterm||
 |Name:|||
 |Student Number:|||
 
-Tuesday December 3, 2019
+Tuesday March 2, 2021
 
 Please solve 8 of the following 10 problems. Each solution is worth 10 marks. 
 Create a working folder and save all of your .py files to the same folder. 
-When your solutions are complete, please upload a .zip of that folder to dropbox.
+When your solutions are complete, please upload a .zip of that folder to the quiz tool.
 
 #### 1. Canadian Federal tax is calculated using the following formula:
 
@@ -31,6 +31,8 @@ volume = pi * r ** 2 * height
     Output the radius and height as they were input
     Output the volume of the cylinder
 
+*Note: You will need to test for non-numeric input
+
 ##### Sample Output
 
 ```
@@ -39,82 +41,8 @@ height >4
 the volume is 201 cubic meters
 ```
 
-#### 3. Golf Scores
 
-The Springfork Amateur Golf Club has a tournament every weekend. The club president has asked you to write two programs:
-A program that will read each player’s name and golf score as keyboard input, 
-and then save these as records in a comma separated variable file named golf.csv. 
-(Each record will have a field for the player’s name and a field for the player’s score.)
-
-```
-
-Rich, 84
-Rob, 92
-
-```
-
-A program that reads the records from the golf.txt file and displays them.
-
-##### Sample Output (Part 1)
-
-```
-name >Rich
-score >84
-Are you done? >n
-name >Rob
-score >92
-Are you done? >y
-```
-
-##### Part 2
-
-A program that reads the records from the golf.csv file and displays them.
-The program will also display a summary row with the number of golfers and
-the average score.
-
-##### Sample Output
-
-```
-the name was Rich his score was 84
-the name was Rob his score was 92
-Average 88.0
-```
-
-#### 4. Golf Scores (Part 3)
-
-The Springfork Amateur Golf Club has asked you to create an application that tells each player whether they got above or below par for each of the 18 holes.
-Here are the par scores:
-
-```
-[3, 3, 4, 3, 3,
-4, 4, 3, 3, 3,
-4, 4, 5, 4, 4,
-3, 3, 3]
-
-```
-
-Your program should store these par scores in a list. The program should
-read the golfer’s scores for each of the 18 holes as well as the golfer’s
-name from a text (csv) file containing the following data:
-
-```
-Mickey, 4, 5, 4, 3, 5, 4, 4, 3, 5, 6, 3, 5, 6, 3, 6, 5, 6, 3
-Minny, 4, 6, 3, 3, 5, 3, 4, 3, 5, 6, 4, 5, 6, 3, 6, 3, 6, 5
-Donald, 4, 5, 3, 3, 4, 3, 4, 4, 5, 6, 4, 5, 6, 3, 4, 6, 5, 3
-```
-
-After the golfer’s scores have been read from the file, the program should
-display the name, how many holes were at or below par and for each player 
-the sum of pars compared to sum of shots for each hole.
-
-```
-The golfer Mickey had 8 holes at or below par and scored 80 on a par 63 course
-The golfer Minny had 8 holes at or below par and scored 80 on a par 63 course
-The golfer Donald had 8 holes at or below par and scored 77 on a par 63 course
-
-```
-
-#### 5. Vowels and Consonants
+#### 3. Vowels and Consonants
 
 Write a program with a function that accepts a string as an argument and returns the number of vowels that the string contains. The application should have another function that accepts a string as an argument and returns the number of consonants that the string contains. The application should let the user enter a string and should display the number of vowels and the number of consonants it contains.
 
@@ -126,7 +54,7 @@ the string contains 11 vowels
 the string contains 14 consonants
 ```
 
-#### 6. Product Name and Price
+#### 4. Product Name and Price
 
 Write a program that keeps product names and prices in a dictionary as key-value pairs.
 The program should display a menu that lets the user look up a product’s price, add a new product name and price, change an
@@ -159,9 +87,9 @@ Enter Price >$1.99
 5 - List
 ```
 
-#### 7. Cash Register
+#### 5. Cash Register
 
-This exercise assumes that you have created the Item class from this repo. Create a CashRegister class that can be used with the RetailItem class. The CashRegister class should be able to internally keep a list of RetailItem objects. The class should have the following methods:
+This exercise assumes that you have created the Item class from lab 7. Create a CashRegister class that can be used with the RetailItem class. The CashRegister class should be able to internally keep a list of RetailItem objects. The class should have the following methods:
 
 * A method named purchase_item that accepts an Item object as an argument.
     Each time the purchase_item method is called, the RetailItem object that is passed as
@@ -214,7 +142,7 @@ Items in Cart
 total: 34.95
 ```
 
-#### 8. Average calorie intake
+#### 6. Average calorie intake
 
 Within a healthy, balanced diet, a man needs around 10,500kJ (2,500kcal) a day to maintain his weight. For a woman, that figure is around 8,400kJ (2,000kcal) a day.
 
@@ -233,7 +161,7 @@ Enter your calories for day 7: 2200
 Your average calories for 7 days was 2584.5714285714284
 ```
 
-#### 9. Vowels, Consonants and word count
+#### 7. Vowels, Consonants and word count
 
 Write a program with a function that accepts a string as an argument and returns the number of vowels that the string contains. The application should have another function that accepts a string as an argument and returns the number of consonants that the string contains. A third function that is also required that looks counts the number of words in the sentence.
 
@@ -248,7 +176,7 @@ the string contains 38 consonants
 the string contains 18 words
 ```
 
-#### 10. Pig Latin
+#### 8. Pig Latin
 
 Write a program that accepts a sentence as input and converts each word to “Pig Latin.” In one version, to convert a word to Pig Latin you remove the letters up to the first vowel and place that letter at the end of the word. Then you append the string “ay” to the word. 
 Here is an example:
@@ -256,6 +184,14 @@ Here is an example:
 English: I SLEPT MOST OF THE NIGHT
 
 Pig Latin: IAY EPTSLAY OSTMAY OFAY ETHAY IGHTNAY
+
+#### 9. ISO 3166 Country codes
+
+Write a program that uses a dictionary to map 10 countyry names to their ISO 3166 2 letter code. Use an exception to make sure that if the country name isn't in the dictionary it returns a helpful error message.
+
+#### 10. Tossing a block
+
+A child's block has a letter D on one face, the word thank-you on another, a picture of an apple on another, the numeral 6 on another, a car on another and a dog on the 6th face. Write a program that tosses that block and reports the side that is up when the block comes to a rest.
 
 ## (Partial) Solutions
 
@@ -314,71 +250,7 @@ print("the volume is", math.pi * nRadius **2 * nHeight, "cubic meters")
 
 ```
 
-3. Golf (part a)
-
-```
-scores = open("golf.csv", "w")
-
-while(True):
-    name = input("name >")
-    score = input("score >")
-    scores.write(name + "," + score + "\n")
-    done = input("Are you done? >")
-    if(done.lower() == "y"):
-        break
-scores.close()
-
-```
-
-Golf (part b)
-
-```
-
-scores = open("golf.csv", "r")
-nTotal = 0
-nCount = 0
-for line in scores:
-    name, score = line.rstrip().split(",")
-    print("the name was", name, "their score was", score)
-    nCount += 1
-    nTotal += int(score)
-
-
-print("Average", nTotal / nCount)
-
-```
-
-4. Golfers Games
-
-```
-
-aPars = [3, 3, 4, 3, 3,
-4, 4, 3, 3, 3,
-4, 4, 5, 4, 4,
-3, 3, 3]
-
-scores = open("golf2.csv", "r")
-
-for line in scores:
-    aScores = line.rstrip().split(",")
-    nPar = 0
-    nParOrBelow = 0
-    nShots = 0
-    nHole = 1
-    for sPar in aPars:
-        nParOnHole = int(sPar)
-        nPar += nParOnHole
-        nShotsOnHole = int(aScores[nHole])
-        nHole += 1 
-        nShots += nShotsOnHole
-        if(nShotsOnHole <= nParOnHole):
-            nParOrBelow += 1
-    print("The golfer", aScores[0], "had", nParOrBelow, "holes at or below par", "and scored", nShots, "on a par", nPar, "course")
-
-
-```
-
-5. Vowels and consonants
+3. Vowels and consonants
 
 ```
 sVowels = "aeiou"
@@ -405,7 +277,7 @@ print("the string contains", num_Consonants(sUserInput), "Consonants")
 
 ```
 
-6. Product Name and Price
+4. Product Name and Price
 
 ```
 # unpickle if the file exists
@@ -449,7 +321,7 @@ pickle.dump(dictPrices, oDictionaryFile)
 oDictionaryFile.close()
 ```
 
-7. Cash Register
+5. Cash Register
 
 ```
 
@@ -512,7 +384,7 @@ print("total:", cash.get_total())
 
 ```
 
-8. Average Calorie intake
+6. Average Calorie intake
 
 ```
 nTotal = 0
@@ -524,7 +396,7 @@ print("Your average calories for", nDays, "days was", nTotal/nDays)
                   
 ```
 
-9. Vowels, Consonants and word count
+7. Vowels, Consonants and word count
 
 Question 5 +
 
@@ -537,7 +409,7 @@ print("The string has", len(aWords), "words")
 
 ```
 
-10. Pig Latin
+8. Pig Latin
 
 ```
 sInput = input("Enter an English phrase to translate")
