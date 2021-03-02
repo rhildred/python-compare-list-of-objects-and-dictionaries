@@ -187,7 +187,7 @@ Pig Latin: IAY EPTSLAY OSTMAY OFAY ETHAY IGHTNAY
 
 #### 9. ISO 3166 Country codes
 
-Write a program that uses a dictionary to map 10 countyry names to their ISO 3166 2 letter code. Use an exception to make sure that if the country name isn't in the dictionary it returns a helpful error message.
+Write a program that uses a dictionary to map 10 country names to their ISO 3166 2 letter code. Use an exception to make sure that if the country name isn't in the dictionary it returns a helpful error message.
 
 #### 10. Tossing a block
 
