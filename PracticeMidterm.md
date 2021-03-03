@@ -59,12 +59,7 @@ the string contains 14 consonants
 Write a program that keeps product names and prices in a dictionary as key-value pairs.
 The program should display a menu that lets the user look up a product’s price, add a new product name and price, change an
 existing price, and delete an existing product name and price.
-The program should pickle the dictionary and save it to a file when the user exits
-the program.
-Each time the program starts, it should retrieve the dictionary from the file
-and unpickle it.
 Add a method to list all of the product names and prices in the dictionary.
-You can use the program in the final exam review as a starting point.
 
 ##### Sample Output
 
@@ -208,7 +203,7 @@ nTaxable = int(input("Please enter your taxable income"))
 #calculation
 if nTaxable <= 45282:
     nPrevious = 0
-    nMarginal = .15
+    nMarginal = .15Final
     nPreviousTax = 0
 elif nTaxable <= 90563:
     nPrevious = 45282
@@ -280,17 +275,9 @@ print("the string contains", num_Consonants(sUserInput), "Consonants")
 4. Product Name and Price
 
 ```
-# unpickle if the file exists
-import pickle
 
 dictPrices = {}
 
-try:
-    oDictionaryFile = open("prices.bin", "rb")
-    dictPrices = pickle.load(oDictionaryFile)
-    oDictionaryFile.close()
-except:
-    print("couldn't create file")
 while True:
 
     print("Choices:")
@@ -316,9 +303,6 @@ while True:
     else:
         break
 
-oDictionaryFile = open("prices.bin", "wb")
-pickle.dump(dictPrices, oDictionaryFile)
-oDictionaryFile.close()
 ```
 
 5. Cash Register
@@ -398,7 +382,7 @@ print("Your average calories for", nDays, "days was", nTotal/nDays)
 
 7. Vowels, Consonants and word count
 
-Question 5 +
+Question 3 +
 
 ```
 
@@ -431,5 +415,40 @@ for sWord in aInput:
 
 print(sOutput)
 
+
+```
+
+9. ISO 3166 Country codes
+
+```
+dictCountry = {"Argentina":"AR","Brazil":"BR","Canada":"CA", "Denmark":"DK", "Egypt":"EG", "France":"FR", "Germany":"DE", "Hungary":"HU", "India":"IN", "Japan":"JP"}
+
+def getCountryCode(sCountry):
+    global dictCountry
+    return dictCountry[sCountry]
+
+try:
+    sCountryName = input("Enter the name of a country: ")
+    sCountryCode = getCountryCode(sCountryName)
+    print("The code for", sCountryName, "is", sCountryCode)
+except:
+    # there is a lot going on here!
+    print("Please enter a country from", list(dictCountry.keys()))
+```
+
+10. Tossing a block
+
+```
+import random
+
+class Block:
+    def toss(self):
+        aSides = ["D", "thank-you", "apple", "6", "car", "dog"]
+        nSide = random.randint(0,5)
+        return aSides[nSide]
+
+oBlock = Block()
+
+print(oBlock.toss())
 
 ```
