@@ -8,7 +8,7 @@ Monday Dec. 6, 2021
 
 Please solve 8 of the following 10 problems. Each solution is worth 10 marks. 
 Create a working folder and save all of your .py files to the same folder. 
-When your solutions are complete, please upload a .zip of that folder to the quiz tool.
+When your solutions are complete, please upload a .zip of that folder to the dropbox provided.
 
 #### 1. Canadian Federal tax is calculated using the following formula:
 
