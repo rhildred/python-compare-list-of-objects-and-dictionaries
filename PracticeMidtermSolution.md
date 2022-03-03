@@ -178,19 +178,8 @@ print("total:", cash.get_total())
 
 ```
 
-6. Average Calorie intake
 
-```
-nTotal = 0
-nDays = 7
-
-for n in range(1, nDays + 1):
-    nTotal += int(input("Enter your calories for day " + str(n) +": "))
-print("Your average calories for", nDays, "days was", nTotal/nDays)
-                  
-```
-
-7. Vowels, Consonants and word count
+6. Vowels, Consonants and word count
 
 Question 3 +
 
@@ -203,7 +192,7 @@ print("The string has", len(aWords), "words")
 
 ```
 
-8. Pig Latin
+7. Pig Latin
 
 ```
 sInput = input("Enter an English phrase to translate")
@@ -228,7 +217,7 @@ print(sOutput)
 
 ```
 
-9. ISO 3166 Country codes
+8. ISO 3166 Country codes
 
 ```
 dictCountry = {"Argentina":"AR","Brazil":"BR","Canada":"CA", "Denmark":"DK", "Egypt":"EG", "France":"FR", "Germany":"DE", "Hungary":"HU", "India":"IN", "Japan":"JP"}
@@ -246,7 +235,7 @@ except:
     print("Please enter a country from", list(dictCountry.keys()))
 ```
 
-10. Tossing a block
+9. Tossing a block
 
 ```
 import random
