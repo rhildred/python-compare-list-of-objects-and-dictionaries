@@ -13,7 +13,7 @@ nTaxable = int(input("Please enter your taxable income"))
 #calculation
 if nTaxable <= 45282:
     nPrevious = 0
-    nMarginal = .15Final
+    nMarginal = .15
     nPreviousTax = 0
 elif nTaxable <= 90563:
     nPrevious = 45282
